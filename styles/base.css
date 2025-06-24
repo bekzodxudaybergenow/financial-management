@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background: #202024;
+    --green-light: #00B37E;
+    --green-dark: #015F43;
+    --red-dark: #F75A68;
+    --grey-light: #E1E1E6;
+    --grey-dark: #c4c4cc;
+    --white: #ffffff;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+}
+.container {
+    max-width: 1150px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.btn {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    color: var(--white);
+    background-color: var(--green-light);
+    transition: background-color .3s ease;
+}
+.btn:hover {
+    background-color: var(--green-dark);
+}
+.btn:active {
+    background-color: var(--green-light);
+}
+
+@media screen and (max-width: 520px) {
+    html {
+        font-size: 14px;
+    }
+}
