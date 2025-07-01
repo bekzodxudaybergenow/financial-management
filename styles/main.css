@@ -60,6 +60,61 @@
     font-weight: 700;
     color: var(--grey-light);
 }
+
+/* CRASH FLOW  */
+.cash-flow {
+}
+.cash-row {
+}
+.cash-form {
+    display: flex;
+    justify-content: space-between;
+    min-height: 3rem;
+    margin-bottom: 1.5rem;
+}
+.cash-form input {
+    width: 85%;
+    background-color: #121214;
+    padding: 16px;
+    border: none;
+    border-radius: 6px;
+    color: var( --grey-light);
+
+}
+.cash-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    width: 13%;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--green-light);
+    background-color: transparent;
+    border: 2px solid var(--green-dark);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.cash-flow button path {
+    transition: fill .3s ease;
+}
+.cash-form button:hover {
+    color: var(--white);
+    background-color: var(--green-light);
+}
+.cash-form button:hover path {
+    fill: #fff;
+} 
+.cash-flow button:active {
+    background-color: var(--green-dark);
+}
+.cash-table {
+}
+.cash-income {
+}
+
+
 @media screen and (max-width: 920px) {
     .activities-cards {
         transform: translateY(-15%);
