@@ -63,12 +63,15 @@
 
 /* CRASH FLOW  */
 .cash-flow {
+    padding-bottom: 2.5rem;
 }
 .cash-row {
+
 }
 .cash-form {
     display: flex;
     justify-content: space-between;
+    column-gap: 10px;
     min-height: 3rem;
     margin-bottom: 1.5rem;
 }
@@ -86,7 +89,7 @@
     align-items: center;
     justify-content: center;
     column-gap: 10px;
-    width: 13%;
+    width: 150px;
     font-weight: 700;
     font-size: 1rem;
     color: var(--green-light);
@@ -110,8 +113,23 @@
     background-color: var(--green-dark);
 }
 .cash-table {
+    display: block;
+}
+.cash-table tbody {
+    display: block;
+    width: 100%;
 }
 .cash-income {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    color: var(--grey-dark);
+    background-color: #29292e;
+}
+.cash-income td:nth-child(1) {
+    width: 50%;
 }
 
 
@@ -152,6 +170,17 @@
     }
     .activities-cards-row {
         justify-content: center;
+    }
+    .cash-form {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .cash-form input {
+        width: 100%;
+    }
+    .cash-form button {
+        width: 100%;
+        min-height: 42px;
     }
 }
 
