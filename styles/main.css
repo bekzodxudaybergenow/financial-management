@@ -158,6 +158,12 @@
         width: 250px;
         object-fit: contain;
     }
+    .cash-table--row {
+        grid-template-columns: 55% 30% auto;
+    }
+    .cash-table--row :nth-child(3) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -172,6 +178,12 @@
     }
     .header-logo-mobile img {
         width: 45px;
+    }
+    .cash-table--row {
+        grid-template-columns: 70% auto;
+    }
+    .cash-table--row :nth-child(4) {
+        display: none;
     }
 }
 @media screen and (max-width: 430px) {
@@ -191,6 +203,16 @@
     .cash-form button {
         width: 100%;
         min-height: 42px;
+    }
+    .cash-table--row {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        padding: 1rem 1.2rem;       
+    }
+    .cash-table--row :nth-child(1),
+    .cash-table--row :nth-child(2) {
+        font-size: .785rem;
     }
 }
 
