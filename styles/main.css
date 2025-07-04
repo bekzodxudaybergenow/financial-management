@@ -65,9 +65,6 @@
 .cash-flow {
     padding-bottom: 2.5rem;
 }
-.cash-row {
-
-}
 .cash-form {
     display: flex;
     justify-content: space-between;
@@ -210,9 +207,12 @@
         column-gap: 10px;
         padding: 1rem 1.2rem;       
     }
-    .cash-table--row :nth-child(1),
-    .cash-table--row :nth-child(2) {
-        font-size: .785rem;
+    .cash-table--row :nth-child(1) {
+        width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
     }
 }
 
