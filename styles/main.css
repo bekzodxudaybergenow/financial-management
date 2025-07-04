@@ -111,6 +111,7 @@
 }
 .cash-table {
     display: block;
+    margin-bottom: 2.2rem;
 }
 .cash-table tbody {
     display: block;
@@ -138,6 +139,44 @@
 }
 .cash-outlay {
     color: var(--red-dark);
+}
+/* CASH PAGINATION */
+.cash-pagination {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+}
+.cash-pagination button {
+    font-size: 1rem;
+    font-weight: 700;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: #323238;
+    color: var(--grey-light);
+    border: none;
+    border-radius: 4px;
+    transition: background-color .3s ease;
+}
+.cash-pagination button:hover {
+    background-color: #3c3c41;
+}
+.cash-pagination button:active {
+    background-color: #323238;
+}
+.cash-pagination button.active {
+    background-color: var(--green-dark);
+}
+.cash-pagination--transfer-btn {
+    background-color: inherit !important;
+    transition: opacity .3s ease;
+}
+.cash-pagination--transfer-btn:hover {
+    opacity: .8;
+}
+.cash-pagination--transfer-btn:active {
+    opacity: 1;
 }
 
 @media screen and (max-width: 920px) {
